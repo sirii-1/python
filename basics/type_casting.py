@@ -1,30 +1,22 @@
-# operators.py
+# type_casting.py
 
-a = 15
-b = 4
+integer_number = 25
+float_number = 7.8
+string_number = "100"
 
-print("Arithmetic Operators")
-print("Addition:", a + b)
-print("Subtraction:", a - b)
-print("Multiplication:", a * b)
-print("Division:", a / b)
-print("Floor Division:", a // b)
-print("Modulus:", a % b)
-print("Exponent:", a ** b)
+print("Original Values")
+print(integer_number, type(integer_number))
+print(float_number, type(float_number))
+print(string_number, type(string_number))
 
 print()
 
-print("Comparison Operators")
-print(a == b)
-print(a != b)
-print(a > b)
-print(a < b)
-print(a >= b)
-print(a <= b)
+print("After Type Casting")
 
-print()
+a = float(integer_number)
+b = int(float_number)
+c = int(string_number)
 
-print("Logical Operators")
-print(a > 10 and b < 5)
-print(a > 20 or b < 5)
-print(not(a > 20))
+print(a, type(a))
+print(b, type(b))
+print(c, type(c))
